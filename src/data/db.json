@@ -1,0 +1,19 @@
+{
+    "characters":[
+        {"id": 1, "name": "faust"},
+        {"id": 2, "name": "gregor"},
+        {"id": 3, "name": "outis"},
+        {"id": 4, "name": "hong lu"},
+        {"id": 5, "name": "dante"},
+        {"id": 6, "name": "yi sang"},
+        {"id": 7, "name": "ishmael"},
+        {"id": 8, "name": "meursault"},
+        {"id": 9, "name": "heathcliff"},
+        {"id": 10, "name": "sinclair"},
+        {"id": 11, "name": "ryoshu"},
+        {"id": 12, "name": "don quixote"},
+        {"id": 13, "name": "rodion"},
+        {"id": 1, "name": "vergilius"},
+        {"id": 1, "name": "charon"}
+    ]
+}
