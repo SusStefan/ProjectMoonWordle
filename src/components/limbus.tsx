@@ -17,8 +17,9 @@ const [solution, setSolution] = useState<Guess | null>(null);
 const [guess, setGuess] = useState<Guess>({ name: "" });
 const [guesses, setGuesses] = useState<Guess[]>([]);
 const [characters, setCharacters] = useState<Guess[]>([]);
-const [nrguesses, setnrguesses] = useState(5);
-
+let [nrguesses, setnrguesses] = useState(5);
+const [suggestions, setSuggestions] = useState<Guess[]>([]);
+const [highscore, sethighscore] = useState(0);
 useEffect(() => {
   fetch("http://localhost:3000/characters")
     .then((res) => res.json())
@@ -31,8 +32,27 @@ useEffect(() => {
     });
 
 }, []);
+const restartGame = () => {
+  // Pick a new random solution
+  const newSolution = characters[Math.floor(Math.random() * characters.length)];
+  setSolution(newSolution);
+  // Reset everything else
+  setGuesses([]);
+  setGuess({ name: "" }); // or "" if guess is just a string
+  setnrguesses(5);       // if you're tracking attempts
+};
 
-
+const saveHighscore = async (name: string, score: number) => {
+  await fetch("http://localhost:3000/highscores", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name: name,
+      score: highscore,
+      timestamp: new Date().toISOString(),
+    }),
+  });
+};
 
 const handleGuessSubmit = () => {
   setnrguesses(nrguesses-1);
@@ -52,13 +72,41 @@ const handleGuessSubmit = () => {
     setGuesses(prev => [notFoundGuess,...prev]);
   }
   if(solution?.name === matchedCharacter?.name)
-    alert("you won") 
+  {
+    alert("you won!") 
+    sethighscore(highscore+1);
+    restartGame()
+  }
+    
   setGuess({name:""}); // clear input
+  if(nrguesses===1)
+  {
+alert("you lost!");
+saveHighscore("Player",highscore)
+window.location.reload()
+  }
+    
 };
 
 
+const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const input = e.target.value;
+  setGuess({ name: input });
+  if (input.trim() === "") {
+    setSuggestions([]);
+    return;
+  }
 
+  const filtered = characters.filter(char =>
+    char.name.toLowerCase().startsWith(input.toLowerCase())
+  );
+  setSuggestions(filtered);
+};
 
+const selectSuggestion = (char: Guess) => {
+  setGuess({ name: char.name });
+  setSuggestions([]);
+};
   return (
     <>
     
@@ -66,29 +114,76 @@ const handleGuessSubmit = () => {
  <Button onClick={() => window.location.href = '/'}>
   <h1 className="text-2xl font-bold mb-4 text-center">Back</h1>
   </Button>
-  <div className="flex items-center">
+  <Button onClick={restartGame} >
+  <h1 className="text-2xl font-bold mb-4 text-center">Restart Game</h1>
+</Button>
+  <div className="flex flex-col items-center">
    <h1 className="text-2xl font-bold mb-4 items-center text-white pl-4">Guesses Remaining: {nrguesses}</h1>
+   <h1 className="text-2xl font-bold mb-4 items-center text-white pl-4">Score: {highscore}</h1>
    </div>
   </div>
       <div className="flex flex-col min-h-screen bg-[#000000] pt-30">
         <div className='bg-[#d6b942] rounded-lg shadow-lg min-h-full min-w-full p-6'>
           <div>
             <div className='bg-[#707070] text-white rounded-lg p-4 mb-4 h-[100px] flex items-center justify-end text-right text-3xl'>
-              <input className='align-right w-full h-full bg-transparent outline-none text-right ' type="text" value={guess.name} onChange={(e) => setGuess({ name:e.target.value})}
+            <div style={{ position: 'relative', width: '100%' }}>
+  <input
+    type="text"
+    value={guess.name}
+    onChange={handleInputChange}
     onKeyDown={(e) => {
-    if (e.key === "Enter") handleGuessSubmit();
-      }} />
+      if (e.key === "Enter") handleGuessSubmit();
+    }}
+    className="w-full bg-transparent outline-none text-right p-2"
+    autoComplete="off"
+  />
+
+  {suggestions.length > 0 && (
+    <ul
+      style={{
+        position: 'absolute',
+        top: '100%',
+        right: 0,
+        left: 0,
+        maxHeight: '150px',
+        overflowY: 'auto',
+        backgroundColor: 'black',
+        border: '1px solid #ccc',
+        borderRadius: '4px',
+        zIndex: 1000,
+        marginTop: '4px',
+        padding: 0,
+        listStyleType: 'none',
+      }}
+    >
+      {suggestions.map((char, i) => (
+        <li
+          key={i}
+          onClick={() => selectSuggestion(char)}
+          style={{
+            padding: '8px 12px',
+            cursor: 'pointer',
+            borderBottom: '1px solid #eee',
+          }}
+          onMouseDown={e => e.preventDefault()} // Prevent input blur on click
+        >
+          {char.name}
+        </li>
+      ))}
+    </ul>
+  )}
+</div>
             </div>
             <div className='bg-[#707070] text-white rounded-lg p-4 h-[340px] overflow-y-auto text-xl pr-2'>
   {guesses.length === 0 ? (
     <p className="text-gray-300">No guesses yet.</p>
   ) : (
- <ul>
+ <ul className='p-10'>
   {guesses.map((g, i) => {
     const guessNumber = guesses.length - i;
 
     return (
-      <li key={i} className="flex space-x-4 items-center rounded px-3 py-2">
+      <li key={i} className="flex space-x-4 items-center rounded px-3 py-2  border-2 border-black">
         <span className="font-bold">#{guessNumber}</span>
 
         <span className={g.name === solution?.name ? "text-green-500" : "text-red-500"}>
@@ -109,7 +204,7 @@ const handleGuessSubmit = () => {
 
         {g.start !== undefined && (
           <span className={g.start === solution?.start ? "text-green-500" : "text-red-500"}>
-            <em>Start: {g.start}
+            <em>First Appearance: Canto {g.start}
             {solution?.start !== undefined && (
              g.start < solution.start ? " ↑↑↑" :
              g.start > solution.start ? " ↓↓↓" : ""

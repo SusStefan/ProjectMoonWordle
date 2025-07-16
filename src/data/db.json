@@ -1,34 +1,439 @@
 {
-    "characters":[
-        {"id": 1, "name": "faust","gender":"Female","tag":"LCB","imp":4,"start":1},
-        {"id": 2, "name": "gregor","gender":"Male","tag":"LCB","imp":4,"start":1},
-        {"id": 3, "name": "outis","gender":"Female","tag":"LCB","imp":4,"start":1},
-        {"id": 4, "name": "hong lu","gender":"Male","tag":"LCB","imp":4,"start":1},
-        {"id": 5, "name": "dante","gender":"Neutral","tag":"LCB","imp":4,"start":1},
-        {"id": 6, "name": "yi sang","gender":"Male","tag":"LCB","imp":4,"start":1},
-        {"id": 7, "name": "ishmael","gender":"Female","tag":"LCB","imp":4,"start":1},
-        {"id": 8, "name": "meursault","gender":"Male","tag":"LCB","imp":4,"start":1},
-        {"id": 9, "name": "heathcliff","gender":"Male","tag":"LCB","imp":4,"start":1},
-        {"id": 10, "name": "sinclair","gender":"Male","tag":"LCB","imp":4,"start":1},
-        {"id": 11, "name": "ryoshu","gender":"Female","tag":"LCB","imp":4,"start":1},
-        {"id": 12, "name": "don quixote","gender":"Female","tag":"LCB","imp":4,"start":1},
-        {"id": 13, "name": "rodion","gender":"Female","tag":"LCB","imp":4,"start":1},
-        {"id": 14, "name": "vergilius","gender":"Male","tag":"LCB","imp":4,"start":1},
-        {"id": 15, "name": "charon","gender":"Female","tag":"LCB","imp":4,"start":1},
-        {"id": 16, "name": "kromer","gender":"Female","tag":"Ncorp","imp":3,"start":3},
-        {"id": 17, "name": "guido","gender":"Male","tag":"Ncorp","imp":2,"start":3},
-        {"id": 18, "name": "saude","gender":"Female","tag":"LCB","imp":1,"start":3},
-        {"id": 19, "name": "donbaek","gender":"Female","tag":"Technology Liberation Alliance","imp":2,"start":4},
-        {"id": 20, "name": "dongrang","gender":"Male","tag":"KCorp","imp":3,"start":4},
-        {"id": 21, "name": "alfonso","gender":"Female","tag":"KCorp","imp":1,"start":4},
-        {"id": 22, "name": "yuri","gender":"Female","imp":1,"tag":"Lobotomy Corporation","start":1},
-        {"id": 23, "name": "hermann","gender":"Female","tag":"Ncorp","imp":1,"start":1},
-        {"id": 24, "name": "head hooligan","gender":"Male","tag":"The Backstreets","imp":2,"start":1},
-        {"id": 25, "name": "aida","gender":"Female","tag":"The Backstreets","imp":2,"start":2},
-        {"id": 26, "name": "jia huan","gender":"Male","tag":"Ncorp","imp":2,"start":1},
-        {"id": 27, "name": "gubo","gender":"Male","tag":"Ncorp","imp":2,"start":1},
-        {"id": 28, "name": "ebony queen's apple","gender":"Female","imp":2,"tag":"Abnormality","start":1},
-        {"id": 29, "name": "doomsday's calendar","gender":"Neutral","imp":2,"tag":"Abnormality","start":1},
-        {"id": 30, "name": "false apple","gender":"Neutral","tag":"Abnormality","imp":3,"start":1}
-    ]
+  "characters": [
+    {
+      "id": 1,
+      "name": "Faust",
+      "gender": "Female",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 2,
+      "name": "Gregor",
+      "gender": "Male",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 3,
+      "name": "Outis",
+      "gender": "Female",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 4,
+      "name": "Hong Lu",
+      "gender": "Male",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 5,
+      "name": "Dante",
+      "gender": "Neutral",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 6,
+      "name": "Yi Sang",
+      "gender": "Male",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 7,
+      "name": "Ishmael",
+      "gender": "Female",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 8,
+      "name": "Meursault",
+      "gender": "Male",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 9,
+      "name": "Heathcliff",
+      "gender": "Male",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 10,
+      "name": "Sinclair",
+      "gender": "Male",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 11,
+      "name": "Ryoshu",
+      "gender": "Female",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 12,
+      "name": "Don Quixote",
+      "gender": "Female",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 13,
+      "name": "Rodion",
+      "gender": "Female",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 14,
+      "name": "Vergilius",
+      "gender": "Male",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 15,
+      "name": "Charon",
+      "gender": "Female",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 1
+    },
+    {
+      "id": 16,
+      "name": "Kromer",
+      "gender": "Female",
+      "tag": "Ncorp",
+      "imp": 3,
+      "start": 3
+    },
+    {
+      "id": 17,
+      "name": "Guido",
+      "gender": "Male",
+      "tag": "Ncorp",
+      "imp": 2,
+      "start": 3
+    },
+    {
+      "id": 18,
+      "name": "Saude",
+      "gender": "Female",
+      "tag": "LCBB",
+      "imp": 1,
+      "start": 2
+    },
+    {
+      "id": 19,
+      "name": "Donbaek",
+      "gender": "Female",
+      "tag": "Technology Liberation Alliance",
+      "imp": 2,
+      "start": 4
+    },
+    {
+      "id": 20,
+      "name": "Dongrang",
+      "gender": "Male",
+      "tag": "KCorp",
+      "imp": 3,
+      "start": 4
+    },
+    {
+      "id": 21,
+      "name": "Alfonso",
+      "gender": "Female",
+      "tag": "KCorp",
+      "imp": 1,
+      "start": 4
+    },
+    {
+      "id": 22,
+      "name": "Yuri",
+      "gender": "Female",
+      "imp": 1,
+      "tag": "Lobotomy Corporation",
+      "start": 1
+    },
+    {
+      "id": 23,
+      "name": "Hermann",
+      "gender": "Female",
+      "tag": "Ncorp",
+      "imp": 1,
+      "start": 1
+    },
+    {
+      "id": 24,
+      "name": "Head Hooligan",
+      "gender": "Male",
+      "tag": "The Backstreets",
+      "imp": 2,
+      "start": 1
+    },
+    {
+      "id": 25,
+      "name": "Aida",
+      "gender": "Female",
+      "tag": "The Backstreets",
+      "imp": 2,
+      "start": 2
+    },
+    {
+      "id": 26,
+      "name": "Jia huan",
+      "gender": "Male",
+      "tag": "Ncorp",
+      "imp": 2,
+      "start": 1
+    },
+    {
+      "id": 27,
+      "name": "Gubo",
+      "gender": "Male",
+      "tag": "Ncorp",
+      "imp": 2,
+      "start": 1
+    },
+    {
+      "id": 28,
+      "name": "Ebony Queen's Apple",
+      "gender": "Female",
+      "imp": 2,
+      "tag": "Abnormality",
+      "start": 1
+    },
+    {
+      "id": 29,
+      "name": "Doomsday's Calendar",
+      "gender": "Neutral",
+      "imp": 2,
+      "tag": "Abnormality",
+      "start": 1
+    },
+    {
+      "id": 30,
+      "name": "False Apple",
+      "gender": "Neutral",
+      "tag": "Abnormality",
+      "imp": 3,
+      "start": 1
+    },
+    {
+      "id": 31,
+      "name": "Aseah",
+      "gender": "Male",
+      "tag": "Ncorp",
+      "imp": 1,
+      "start": 6
+    },
+    {
+      "id": 32,
+      "name": "Sonya",
+      "gender": "Male",
+      "tag": "Yurodiviye",
+      "imp": 1,
+      "start": 2
+    },
+    {
+      "id": 33,
+      "name": "Ahab",
+      "gender": "Female",
+      "tag": "Pequod",
+      "imp": 3,
+      "start": 5
+    },
+    {
+      "id": 34,
+      "name": "Nelly",
+      "gender": "Female",
+      "tag": "Wuthering Heights",
+      "imp": 3,
+      "start": 6
+    },
+    {
+      "id": 34,
+      "name": "Demian",
+      "gender": "Male",
+      "tag": "Demian's Group",
+      "imp": 1,
+      "start": 3
+    },
+    {
+      "id": 35,
+      "name": "Rim",
+      "gender": "Male",
+      "tag": "Demian's Group",
+      "imp": 1,
+      "start": 5
+    },
+    {
+      "id": 36,
+      "name": "Sanson",
+      "gender": "Male",
+      "tag": "Demian's Group",
+      "imp": 1,
+      "start": 7
+    },
+    {
+      "id": 37,
+      "name": "Panther",
+      "gender": "Male",
+      "tag": "Purple Tear's Pupil",
+      "imp": 0,
+      "start": 0
+    },
+    {
+      "id": 38,
+      "name": "Lion",
+      "gender": "Female",
+      "tag": "Purple Tear's Pupil",
+      "imp": 0,
+      "start": 0
+    },
+    {
+      "id": 39,
+      "name": "Wolf",
+      "gender": "Female",
+      "tag": "Purple Tear's Pupil",
+      "imp": 0,
+      "start": 0
+    },
+    {
+      "id": 40,
+      "name": "Aya",
+      "gender": "Female",
+      "tag": "Fixer",
+      "imp": 1,
+      "start": 1
+    },
+    {
+      "id": 41,
+      "name": "Hopkins",
+      "gender": "Male",
+      "tag": "Fixer",
+      "imp": 1,
+      "start": 1
+    },
+    {
+      "id": 42,
+      "name": "Tomah",
+      "gender": "Male",
+      "tag": "G. Corp",
+      "imp": 1,
+      "start": 1
+    },
+    {
+      "id": 43,
+      "name": "Effie",
+      "gender": "Male",
+      "tag": "LCCB",
+      "imp": 1,
+      "start": 2
+    },
+    {
+      "id": 44,
+      "name": "Sigfried",
+      "gender": "Male",
+      "tag": "Fixer",
+      "imp": 1,
+      "start": 3
+    },
+    {
+      "id": 45,
+      "name": "Samjo",
+      "gender": "Male",
+      "tag": "K Corp",
+      "imp": 1,
+      "start": 4
+    },
+    {
+      "id": 46,
+      "name": "Shrenne",
+      "gender": "Female",
+      "tag": "K Corp",
+      "imp": 1,
+      "start": 4
+    },
+    {
+      "id": 47,
+      "name": "Ricardo",
+      "gender": "Male",
+      "tag": "The Middle",
+      "imp": 2,
+      "start": 5
+    },
+    {
+      "id": 48,
+      "name": "Werner",
+      "gender": "Male",
+      "tag": "The Middle",
+      "imp": 2,
+      "start": 7.5
+    },
+    {
+      "id": 49,
+      "name": "Erlking Heathcliff",
+      "gender": "Male",
+      "tag": "Wuthering Heights",
+      "imp": 3,
+      "start": 6
+    },
+    {
+      "id": 50,
+      "name": "La Manchaland's Don Quixote",
+      "gender": "Male",
+      "tag": "Bloodfiend",
+      "imp": 3,
+      "start": 7
+    },
+    {
+      "id": 51,
+      "name": "Jia Mu",
+      "gender": "Female",
+      "tag": "Jia Family",
+      "imp": 3,
+      "start": 8
+    },
+    {
+      "id": 52,
+      "name": "Jia Xichun",
+      "gender": "Female",
+      "tag": "Jia Family",
+      "imp": 4,
+      "start": 7
+    },
+    {
+      "id": 53,
+      "name": "Sweepers",
+      "gender": "Neutral",
+      "tag": "The Backstreets",
+      "imp": 3,
+      "start": 7.5
+    }
+  ],
+  "highscores": [
+    
+  ]
 }
