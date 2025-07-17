@@ -10,6 +10,7 @@ type Guess = {
   start?:number;
   tag?: string;  // or whatever properties you have
   gender?: string;
+  imgsrc?: string;
   imp?:number;
 };
 
@@ -56,6 +57,7 @@ const saveHighscore = async (name: string, score: number) => {
 
 const handleGuessSubmit = () => {
   setnrguesses(nrguesses-1);
+
   if (guess.name.trim() === "") return;
   const normalizedGuess = guess.name.trim().toLowerCase();
    
@@ -76,15 +78,14 @@ const handleGuessSubmit = () => {
     alert("you won!") 
     sethighscore(highscore+1);
     restartGame()
-  }
-    
-  setGuess({name:""}); // clear input
-  if(nrguesses===1)
+  } 
+    if(nrguesses<1)
   {
-alert("you lost!");
-saveHighscore("Player",highscore)
-window.location.reload()
+  alert("you lost!");
+  saveHighscore("Player",highscore)
+  window.location.reload()
   }
+  setGuess({name:""}); // clear input
     
 };
 
@@ -139,38 +140,37 @@ const selectSuggestion = (char: Guess) => {
   />
 
   {suggestions.length > 0 && (
-    <ul
-      style={{
-        position: 'absolute',
-        top: '100%',
-        right: 0,
-        left: 0,
-        maxHeight: '150px',
-        overflowY: 'auto',
-        backgroundColor: 'black',
-        border: '1px solid #ccc',
-        borderRadius: '4px',
-        zIndex: 1000,
-        marginTop: '4px',
-        padding: 0,
-        listStyleType: 'none',
-      }}
+
+   <ul
+      className="flex 
+      flex-col
+      items-center
+      absolute
+      top-full
+      pt-5
+      w-1/3
+      max-h-50
+      overflow-y-scroll
+      bg-black
+      border-2 border-yellow
+      z-100
+    "
     >
       {suggestions.map((char, i) => (
+        <div className='flex flex-wrap flex-row hover:bg-gray-700'>
         <li
           key={i}
           onClick={() => selectSuggestion(char)}
-          style={{
-            padding: '8px 12px',
-            cursor: 'pointer',
-            borderBottom: '1px solid #eee',
-          }}
+          className='flex pb-10 min-w-100'
           onMouseDown={e => e.preventDefault()} // Prevent input blur on click
         >
-          {char.name}
+           <span className='flex'><img src={char?.imgsrc} alt={char?.name} className="w-25 h-20" /></span>
+          <span className='flex flex-wrap'>{char.name}</span>
         </li>
+        </div>
       ))}
     </ul>
+ 
   )}
 </div>
             </div>
@@ -185,6 +185,8 @@ const selectSuggestion = (char: Guess) => {
     return (
       <li key={i} className="flex space-x-4 items-center rounded px-3 py-2  border-2 border-black">
         <span className="font-bold">#{guessNumber}</span>
+
+        <span><img src={g?.imgsrc} alt={g?.name} className="w-25 h-20" /></span>
 
         <span className={g.name === solution?.name ? "text-green-500" : "text-red-500"}>
           <strong>Name:</strong> {g.name}
