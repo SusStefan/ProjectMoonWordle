@@ -1,5 +1,5 @@
 import { Button } from "../UI/Button"
-
+import {LinkButton} from "../UI/LinkButton"
 const home = () => {
   return (
        <div className="flex flex-row min-h-screen bg-black">
@@ -8,12 +8,9 @@ const home = () => {
         <Button onClick={() => window.location.href = '/limbus'}>
           <h1 className="text-2xl font-bold mb-4 text-center">Limbus Wordle</h1>
         </Button>
-        <Button onClick={() => window.location.href = '/calculatorstiintific'}>
-          <h1 className="text-2xl font-bold mb-4 text-center">Library of Ruina Wordle</h1>
-        </Button>
-        <Button onClick={() => window.location.href = '/calculatorstiintific'}>
-          <h1 className="text-2xl font-bold mb-4 text-center">Lobotomy Corporation Wordle</h1>
-        </Button>
+        <LinkButton onClick={() => window.location.href = '/link'}>
+          <h1 className="text-2xl font-bold mb-4 text-center text-lime-500">Guess the Link</h1>
+        </LinkButton>
       </div>
        <div className="w-full h-[50vh] flex items-center justify-center bg-gradient-to-b from-black-600 to-yellow-800">
         <h1 className="text-4xl font-bold text-center text-amber-500 px-4">

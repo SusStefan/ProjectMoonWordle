@@ -1,0 +1,104 @@
+{
+    "characters":[
+    {
+        "id": 1,
+        "name": "Link - The Legend of Zelda",
+        "platform":"NES",
+        "year": 1986,
+        "age": "Child",
+        "signature":"Wooden Sword",
+        "visual": "8-bit"
+    },
+    {
+        "id": 2,
+        "name": "Link - A Link to the Past",
+        "platform":"SNES",
+        "year": 1991,
+        "age": ["Child","Teen"],
+        "signature":"Master Sword",
+        "visual": "16-bit"
+    },
+    {
+        "id": 3,
+        "name": "Link - Ocarina of Time",
+        "year": 1998,
+        "platform":"N64",
+        "age": ["Child","Adult"],
+        "signature":"Master Sword",
+        "visual": "Polygonal 3D"
+    },
+     {
+        "id": 4,
+        "name": "Link - Majora's Mask",
+        "year": 2000,
+        "platform":"N64",
+        "age": "Child",
+        "signature":"Masks",
+        "visual": "Polygonal 3D"
+    },
+     {
+        "id": 5,
+        "name": "Link - The Wind Waker",
+        "year": 2002,
+        "platform":"Gamecube",
+        "age": "Child",
+        "signature":"Wind Waker Baton",
+        "visual": "Cel-shaded"
+    },
+     {
+        "id": 6,
+        "name": "Link - Twilight Princess",
+        "year": 2006,
+        "platform":["Gamecube","Wii"],
+        "age": ["Teen","Adult"],
+        "signature":["Master Sword","Transformation"],
+        "visual": "Polygonal 3D"
+    },
+     {
+        "id": 7,
+        "name": "Link - Phantom Hourglass - Link",
+        "year": 2007,
+        "platform":"DS",
+        "age": "Child",
+        "signature":"Phantom Hourglass",
+        "visual": "Cel-shaded"
+    },
+     {
+        "id": 8,
+        "name": "Link - Skyward Sword",
+        "year": 2011,
+        "platform":"Wii",
+        "age": "Teen",
+        "signature":"Master Sword",
+        "visual": "Cel-shaded"
+    },
+     {
+        "id": 9,
+        "name": "Link - A Link Between Worlds",
+        "year": 2013,
+        "platform":"3DS",
+        "age": "Teen",
+        "signature":["Master Sword","Merge Ability"],
+        "visual": "Polygonal 3D"
+    },
+     {
+        "id": 10,
+        "name": "Link - Breath of the Wild",
+        "year": 2017,
+        "platform":"Switch",
+        "age": "Adult",
+        "signature":["Master Sword","Paraglider"],
+        "visual": "Cel-shaded"
+    },
+     {
+        "id": 11,
+        "name": "Link - Tears of the Kingdom",
+        "year": 2023,
+        "platform":"Switch",
+        "age": "Adult",
+        "signature":["Zonai arm","Ultrahand","Fuse Ability"],
+        "visual": "Cel-shaded"
+    }
+    ]
+
+}

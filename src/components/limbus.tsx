@@ -22,7 +22,7 @@ let [nrguesses, setnrguesses] = useState(5);
 const [suggestions, setSuggestions] = useState<Guess[]>([]);
 const [highscore, sethighscore] = useState(0);
 useEffect(() => {
-  fetch("http://localhost:3000/characters")
+  fetch("/charjson/db.json")
     .then((res) => res.json())
     .then((json) => {
      const data = Array.isArray(json) ? json : json.characters;
@@ -43,17 +43,7 @@ const restartGame = () => {
   setnrguesses(5);       // if you're tracking attempts
 };
 
-const saveHighscore = async (name: string, score: number) => {
-  await fetch("http://localhost:3000/highscores", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      name: name,
-      score: highscore,
-      timestamp: new Date().toISOString(),
-    }),
-  });
-};
+
 
 const handleGuessSubmit = () => {
   setnrguesses(nrguesses-1);
@@ -82,7 +72,6 @@ const handleGuessSubmit = () => {
     if(nrguesses<1)
   {
   alert("you lost!");
-  saveHighscore("Player",highscore)
   window.location.reload()
   }
   setGuess({name:""}); // clear input
@@ -146,8 +135,10 @@ const selectSuggestion = (char: Guess) => {
       flex-col
       items-center
       absolute
+      right-0
       top-full
       pt-5
+      pb-5
       w-1/3
       max-h-50
       overflow-y-scroll
@@ -161,11 +152,11 @@ const selectSuggestion = (char: Guess) => {
         <li
           key={i}
           onClick={() => selectSuggestion(char)}
-          className='flex pb-10 min-w-100'
+          className='flex flex items-center space-x-4 p-2 hover:bg-gray-700 cursor-pointer min-w-100 '
           onMouseDown={e => e.preventDefault()} // Prevent input blur on click
         >
-           <span className='flex'><img src={char?.imgsrc} alt={char?.name} className="w-25 h-20" /></span>
-          <span className='flex flex-wrap'>{char.name}</span>
+           <span className='flex'><img src={char?.imgsrc} alt={char?.name} className="w-25 h-20 object-contain" /></span>
+          <span className='flex flex-wrap text-sm leading-tight break-words'>{char.name}</span>
         </li>
         </div>
       ))}

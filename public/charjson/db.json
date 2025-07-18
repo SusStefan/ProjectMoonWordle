@@ -1,0 +1,505 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Faust",
+      "gender": "Female",
+      "imgsrc": "/icons/faust.png",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 2,
+      "name": "Gregor",
+      "gender": "Male",
+      "imgsrc": "/icons/gregor.png",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 3,
+      "name": "Outis",
+      "gender": "Female",
+      "imgsrc": "/icons/outis.png",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 4,
+      "name": "Hong Lu",
+      "gender": "Male",
+      "imgsrc": "/icons/honglu.png",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 5,
+      "name": "Dante",
+      "imgsrc": "/icons/dante.png",
+      "gender": "Neutral",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 6,
+      "name": "Yi Sang",
+      "imgsrc": "/icons/yisang.png",
+      "gender": "Male",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 7,
+      "name": "Ishmael",
+      "gender": "Female",
+      "imgsrc": "/icons/ishmael.png",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 8,
+      "name": "Meursault",
+      "gender": "Male",
+      "imgsrc": "/icons/meursault.png",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 9,
+      "name": "Heathcliff",
+      "gender": "Male",
+      "imgsrc": "/icons/heathcliff.png",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 10,
+      "name": "Sinclair",
+      "gender": "Male",
+      "imgsrc": "/icons/sinclair.png",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 11,
+      "name": "Ryoshu",
+      "gender": "Female",
+      "imgsrc": "/icons/ryoshu.png",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 12,
+      "name": "Don Quixote",
+      "gender": "Female",
+      "imgsrc": "/icons/donquixote.png",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 13,
+      "name": "Rodion",
+      "gender": "Female",
+      "imgsrc": "/icons/rodion.png",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 14,
+      "name": "Vergilius",
+      "gender": "Male",
+      "imgsrc": "/icons/vergilius.png",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 15,
+      "name": "Charon",
+      "gender": "Female",
+      "imgsrc": "/icons/charon.png",
+      "tag": "LCB",
+      "imp": 4,
+      "start": 0
+    },
+    {
+      "id": 16,
+      "name": "Kromer",
+      "gender": "Female",
+      "imgsrc": "/icons/kromer.png",
+      "tag": "Ncorp",
+      "imp": 3,
+      "start": 3
+    },
+    {
+      "id": 17,
+      "name": "Guido",
+      "imgsrc": "/icons/guido.png",
+      "gender": "Male",
+      "tag": "Ncorp",
+      "imp": 2,
+      "start": 3
+    },
+    {
+      "id": 18,
+      "name": "Saude",
+      "imgsrc": "/icons/saude.png",
+      "gender": "Female",
+      "tag": "LCBB",
+      "imp": 1,
+      "start": 2
+    },
+    {
+      "id": 19,
+      "name": "Dongbaek",
+      "gender": "Female",
+      "imgsrc": "/icons/dongbaek.png",
+      "tag": "Technology Liberation Alliance",
+      "imp": 2,
+      "start": 4
+    },
+    {
+      "id": 20,
+      "name": "Dongrang",
+      "gender": "Male",
+      "imgsrc": "/icons/dongrang.png",
+      "tag": "KCorp",
+      "imp": 3,
+      "start": 4
+    },
+    {
+      "id": 21,
+      "name": "Alfonso",
+      "imgsrc": "/icons/alfonso.png",
+      "gender": "Female",
+      "tag": "KCorp",
+      "imp": 1,
+      "start": 4
+    },
+    {
+      "id": 22,
+      "name": "Yuri",
+      "gender": "Female",
+      "imgsrc": "/icons/yuri.png",
+      "imp": 1,
+      "tag": "Lobotomy Corporation",
+      "start": 1
+    },
+    {
+      "id": 23,
+      "name": "Hermann",
+      "imgsrc": "/icons/hermann.png",
+      "gender": "Female",
+      "tag": "Ncorp",
+      "imp": 1,
+      "start": 1
+    },
+    {
+      "id": 24,
+      "name": "Mephistopholes",
+      "gender": "Neutral",
+      "imgsrc": "/icons/mephi.png",
+      "tag": "LCB",
+      "imp": 1,
+      "start": 0
+    },
+    {
+      "id": 25,
+      "name": "Aida",
+      "gender": "Female",
+      "imgsrc": "/icons/aida.png",
+      "tag": "The Backstreets",
+      "imp": 2,
+      "start": 2
+    },
+    {
+      "id": 26,
+      "name": "Jia huan",
+      "gender": "Male",
+      "imgsrc": "/icons/jiahuan.png",
+      "tag": "Ncorp",
+      "imp": 2,
+      "start": 1
+    },
+    {
+      "id": 27,
+      "name": "Gubo",
+      "gender": "Male",
+      "imgsrc": "/icons/gubo.png",
+      "tag": "Ncorp",
+      "imp": 2,
+      "start": 1
+    },
+    {
+      "id": 28,
+      "name": "Ebony Queen's Apple",
+      "gender": "Female",
+      "imp": 2,
+      "tag": "Abnormality",
+      "start": 1
+    },
+    {
+      "id": 29,
+      "name": "Doomsday's Calendar",
+      "gender": "Neutral",
+      "imp": 2,
+      "tag": "Abnormality",
+      "start": 1
+    },
+    {
+      "id": 30,
+      "name": "False Apple",
+      "gender": "Neutral",
+      "tag": "Abnormality",
+      "imp": 3,
+      "start": 1
+    },
+    {
+      "id": 31,
+      "name": "Aseah",
+      "gender": "Male",
+      "imgsrc": "/icons/aseah.png",
+      "tag": "Ncorp",
+      "imp": 1,
+      "start": 6
+    },
+    {
+      "id": 32,
+      "name": "Sonya",
+      "gender": "Male",
+      "imgsrc": "/icons/sonya.png",
+      "tag": "Yurodiviye",
+      "imp": 1,
+      "start": 2
+    },
+    {
+      "id": 33,
+      "name": "Ahab",
+      "gender": "Female",
+      "imgsrc": "/icons/ahab.png",
+      "tag": "Pequod",
+      "imp": 3,
+      "start": 5
+    },
+    {
+      "id": 34,
+      "name": "Nelly",
+      "gender": "Female",
+      "imgsrc": "/icons/nelly.png",
+      "tag": "Wuthering Heights",
+      "imp": 2,
+      "start": 6
+    },
+    {
+      "id": 34,
+      "name": "Demian",
+      "gender": "Male",
+      "imgsrc": "/icons/demian.png",
+      "tag": "Demian's Group",
+      "imp": 1,
+      "start": 3
+    },
+    {
+      "id": 35,
+      "name": "Rim",
+      "gender": "Male",
+      "imgsrc": "/icons/rim.png",
+      "tag": "Demian's Group",
+      "imp": 1,
+      "start": 5
+    },
+    {
+      "id": 36,
+      "name": "Sanson",
+      "gender": "Male",
+      "imgsrc": "/icons/sanson.png",
+      "tag": "Demian's Group",
+      "imp": 1,
+      "start": 7
+    },
+    {
+      "id": 37,
+      "name": "Panther",
+      "gender": "Male",
+      "tag": "Purple Tear's Pupil",
+      "imgsrc": "/icons/panther.png",
+      "imp": 0,
+      "start": 0
+    },
+    {
+      "id": 38,
+      "name": "Lion",
+      "gender": "Female",
+      "tag": "Purple Tear's Pupil",
+      "imgsrc": "/icons/lion.png",
+      "imp": 0,
+      "start": 0
+    },
+    {
+      "id": 39,
+      "name": "Wolf",
+      "gender": "Female",
+      "imgsrc": "/icons/wolf.png",
+      "tag": "Purple Tear's Pupil",
+      "imp": 0,
+      "start": 0
+    },
+    {
+      "id": 40,
+      "name": "Aya",
+      "gender": "Female",
+      "tag": "Fixer",
+      "imgsrc": "/icons/aya.png",
+      "imp": 1,
+      "start": 1
+    },
+    {
+      "id": 41,
+      "name": "Hopkins",
+      "gender": "Male",
+      "imgsrc": "/icons/hopkins.png",
+      "tag": "Fixer",
+      "imp": 1,
+      "start": 1
+    },
+    {
+      "id": 42,
+      "name": "Tomah",
+      "gender": "Male",
+      "imgsrc": "/icons/tomah.png",
+      "tag": "G. Corp",
+      "imp": 1,
+      "start": 1
+    },
+    {
+      "id": 43,
+      "name": "Effie",
+      "gender": "Male",
+      "tag": "LCCB",
+      "imgsrc": "/icons/effie.png",
+      "imp": 1,
+      "start": 2
+    },
+    {
+      "id": 44,
+      "name": "Siegfried",
+      "gender": "Male",
+      "imgsrc": "/icons/siegfried.png",
+      "tag": "Fixer",
+      "imp": 1,
+      "start": 3
+    },
+    {
+      "id": 45,
+      "name": "Samjo",
+      "imgsrc": "/icons/samjo.png",
+      "gender": "Male",
+      "tag": "K Corp",
+      "imp": 1,
+      "start": 4
+    },
+    {
+      "id": 46,
+      "name": "Shrenne",
+      "imgsrc": "/icons/shrenne.png",
+      "gender": "Female",
+      "tag": "K Corp",
+      "imp": 1,
+      "start": 4
+    },
+    {
+      "id": 47,
+      "name": "Ricardo",
+      "gender": "Male",
+      "imgsrc": "/icons/ricardo.png",
+      "tag": "The Middle",
+      "imp": 2,
+      "start": 5
+    },
+    {
+      "id": 48,
+      "name": "Werner",
+      "gender": "Male",
+      "imgsrc": "/icons/werner.png",
+      "tag": "The Middle",
+      "imp": 2,
+      "start": 7.5
+    },
+    {
+      "id": 49,
+      "name": "Erlking Heathcliff",
+      "gender": "Male",
+      "imgsrc": "/icons/erlking.png",
+      "tag": "Wuthering Heights",
+      "imp": 3,
+      "start": 6
+    },
+    {
+      "id": 50,
+      "name": "Don Quixote of LaManchaLand",
+      "gender": "Male",
+      "imgsrc": "/icons/lamanchalanddonquixote.png",
+      "tag": "Bloodfiend",
+      "imp": 3,
+      "start": 7
+    },
+    {
+      "id": 51,
+      "name": "Jia Mu",
+      "gender": "Female",
+      "imgsrc": "/icons/jiamu.png",
+      "tag": "Jia Family",
+      "imp": 3,
+      "start": 8
+    },
+    {
+      "id": 52,
+      "name": "Jia Xichun",
+      "gender": "Female",
+      "imgsrc": "/icons/jiaxichun.png",
+      "tag": "Jia Family",
+      "imp": 4,
+      "start": 7
+    },
+    {
+      "id": 53,
+      "name": "Sweepers",
+      "gender": "Neutral",
+      "imgsrc": "/icons/sweeper.png",
+      "tag": "The Backstreets",
+      "imp": 3,
+      "start": 7.5
+    },
+    {
+      "id": 54,
+      "name": "Jia Qiu",
+      "gender": "Male",
+      "imgsrc": "/icons/jiaqiu.png",
+      "tag": "The Pinky",
+      "imp": 2,
+      "start": 7.5
+    },
+    {
+      "id": 55,
+      "name": "Zilu",
+      "gender": "Female",
+      "imgsrc": "/icons/zilu.png",
+      "tag": "The Pinky",
+      "imp": 3,
+      "start": 7.5
+    }
+  ]
+}
