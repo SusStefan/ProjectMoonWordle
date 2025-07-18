@@ -22,45 +22,63 @@
         "id": 3,
         "name": "Link - Ocarina of Time",
         "year": 1998,
-        "platform":"N64",
+        "platform":["N64","Gamecube","3DS"],
         "age": ["Child","Adult"],
-        "signature":"Master Sword",
+        "signature":["Master Sword","Ocarina of Time"],
         "visual": "Polygonal 3D"
     },
      {
         "id": 4,
         "name": "Link - Majora's Mask",
         "year": 2000,
-        "platform":"N64",
+        "platform":["N64","3DS"],
         "age": "Child",
-        "signature":"Masks",
+        "signature":["Masks","Ocarina of Time"],
         "visual": "Polygonal 3D"
     },
      {
         "id": 5,
         "name": "Link - The Wind Waker",
         "year": 2002,
-        "platform":"Gamecube",
+        "platform":["Gamecube","Wii","Wii U"],
         "age": "Child",
-        "signature":"Wind Waker Baton",
+        "signature":["Wind Waker Baton","King of Red Lions"],
         "visual": "Cel-shaded"
+    },
+     {
+        "id": 5,
+        "name": "Link - Minish Cap",
+        "year": 2005,
+        "platform":"GBA",
+        "age": "Child",
+        "signature":["Minish Cap","Picori Blade"],
+        "visual": "16-bit"
     },
      {
         "id": 6,
         "name": "Link - Twilight Princess",
         "year": 2006,
-        "platform":["Gamecube","Wii"],
-        "age": ["Teen","Adult"],
-        "signature":["Master Sword","Transformation"],
+        "platform":["Gamecube","Wii","Wii U"],
+        "age": "Adult",
+        "signature":["Master Sword","Wolf Transformation"],
         "visual": "Polygonal 3D"
     },
      {
         "id": 7,
-        "name": "Link - Phantom Hourglass - Link",
+        "name": "Link - Phantom Hourglass",
         "year": 2007,
         "platform":"DS",
         "age": "Child",
-        "signature":"Phantom Hourglass",
+        "signature":["Phantom Hourglass","Phantom Sword","Linebeck Ship"],
+        "visual": "Cel-shaded"
+    },
+     {
+        "id": 7,
+        "name": "Link - Spirit Tracks",
+        "year": 2009,
+        "platform":"DS",
+        "age": "Child",
+        "signature":["Spirit Train","Spirit Flute"],
         "visual": "Cel-shaded"
     },
      {
@@ -68,8 +86,8 @@
         "name": "Link - Skyward Sword",
         "year": 2011,
         "platform":"Wii",
-        "age": "Teen",
-        "signature":"Master Sword",
+        "age": "Adult",
+        "signature":["Master Sword","Loftwing"],
         "visual": "Cel-shaded"
     },
      {
@@ -77,7 +95,7 @@
         "name": "Link - A Link Between Worlds",
         "year": 2013,
         "platform":"3DS",
-        "age": "Teen",
+        "age": "Child",
         "signature":["Master Sword","Merge Ability"],
         "visual": "Polygonal 3D"
     },
@@ -85,9 +103,9 @@
         "id": 10,
         "name": "Link - Breath of the Wild",
         "year": 2017,
-        "platform":"Switch",
+        "platform":["Wii U","Switch"],
         "age": "Adult",
-        "signature":["Master Sword","Paraglider"],
+        "signature":["Master Sword","Paraglider","Sheikah Slate","Shrines"],
         "visual": "Cel-shaded"
     },
      {
@@ -96,7 +114,7 @@
         "year": 2023,
         "platform":"Switch",
         "age": "Adult",
-        "signature":["Zonai arm","Ultrahand","Fuse Ability"],
+        "signature":["Zonai arm","Sheikah Slate","Shrines"],
         "visual": "Cel-shaded"
     }
     ]
