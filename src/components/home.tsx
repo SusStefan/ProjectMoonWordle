@@ -1,13 +1,13 @@
-import { Button } from "../UI/Button"
+import { LimButton } from "../UI/limButton"
 import {LinkButton} from "../UI/LinkButton"
 const home = () => {
   return (
        <div className="flex flex-row min-h-screen bg-black">
      
       <div className = "flex flex-col items-center justify-center mt-8 gap-4 px-10" >
-        <Button onClick={() => window.location.href = '/limbus'}>
+        <LimButton onClick={() => window.location.href = '/limbus'}>
           <h1 className="text-2xl font-bold mb-4 text-center">Limbus Wordle</h1>
-        </Button>
+        </LimButton>
         <LinkButton onClick={() => window.location.href = '/link'}>
           <h1 className="text-2xl font-bold mb-4 text-center text-lime-500">Guess the Link</h1>
         </LinkButton>
